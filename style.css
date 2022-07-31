@@ -1,0 +1,84 @@
+/*
+* IMPORT FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+/*
+* CSS VARIABLES
+*/
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --White: hsl(0, 0%, 100%);
+    --font-size: 16px;
+}
+
+/*
+* RESET DEFAULT STYLES
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* STYLES OF ELEMENT BODY
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+* Media Queries
+*/
+@media (min-width: 768px) {
+    .main {
+        background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--Red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+    }
+
+    header h1 {
+        width: 70%;
+        font-size: 50px;
+    }
+
+    header p {
+        width: 84%;
+    }
+
+    form {
+        background-color: var(--white);
+        padding: 40px 50px 10px 50px;
+        height: 530px;
+        border-radius: 10px;
+    }
+
+    .form {
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
