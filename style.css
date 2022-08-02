@@ -41,6 +41,71 @@ body {
 }
 
 /*
+* Form Inputs Styles
+*/
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control input {
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control.success input {
+    border: 2px solid var(--Green);
+}
+
+.form-control.error input {
+    border: 2px solid var(--Red);
+}
+
+.form-control.error img {
+    visibility: visible;
+}
+
+.form-control.error span {
+    visibility: visible;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--Dark-Blue);
+}
+
+.form-control img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-control span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    color: var(--Red);
+    visibility: hidden;
+}
+
+/*
+* Form Card
+*/
+form {
+    background-color: var(--White);
+    padding: 1rem;
+    height: 530px;
+    border-radius: 10px;
+}
+
+/*
 * MAIN BACKGROUND WRAPPER
 */
 .main {
@@ -96,6 +161,7 @@ header p {
     font-size: 1.1rem;
     box-shadow: 0px 7px 0px 1px rgb(0 0 0 / 17%);
     border-radius: 0.75rem;
+    margin-bottom: 2rem;
 }
 
 .form .try-free-button > p {
