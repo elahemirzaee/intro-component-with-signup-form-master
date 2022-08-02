@@ -100,8 +100,8 @@ input:focus {
 */
 form {
     background-color: var(--White);
-    padding: 1rem;
-    height: 530px;
+    padding: 2rem 1rem;
+    /*height: 530px;*/
     border-radius: 10px;
 }
 
@@ -148,6 +148,45 @@ header p {
     justify-items: center;
 }
 
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/*
+* Sign Up Button
+*/
+.form .sign-up-button {
+    border: none;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background-color: var(--Green);
+    color: var(--White);
+    padding: 1.25em 0;
+    max-width: calc(450rem / 16);
+    width: 100%;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 0px 1px hsl(154deg 59% 51% / 56%);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.form p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+}
+
+.form p > a {
+    color: var(--Red);
+    text-decoration: none;
+}
+
+/*
+* Try For Free Button
+*/
 .form .try-free-button {
     border: none;
     text-align: center;
