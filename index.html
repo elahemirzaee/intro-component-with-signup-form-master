@@ -8,14 +8,20 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
+<!--    Main Wrapper    -->
 <div class="main">
+    <!--    Header    -->
     <header>
         <h1>Learn to code by watching others</h1>
         <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,but
             understanding how developers think is invaluable. </p>
     </header>
+    <!--    Header    -->
 
-    <div class="form" id="form">
+    <!--    Form Card    -->
+    <div class="form-card" id="form">
+
+        <!--    Try Free Button    -->
         <div class="try-free-button">
             <p>
                 Try it free 7 days
@@ -24,41 +30,58 @@
         </span>
             </p>
         </div>
+        <!--    Try Free Button    -->
 
-
+        <!--    HTML Form    -->
         <form method="POST">
+
+            <!--    Input Wrapper For First Name    -->
             <div class="form-control">
                 <input type="text" id="fname" name="fname" placeholder="First Name">
                 <img src="images/icon-error.svg" alt="Error">
                 <span>Error message</span>
             </div>
+            <!--    Input Wrapper For First Name    -->
 
+            <!--    Input Wrapper For Last Name    -->
             <div class="form-control">
                 <input type="text" id="lname" name="lname" placeholder="Last Name">
                 <img src="images/icon-error.svg" alt="Error">
                 <span>Error message</span>
             </div>
+            <!--    Input Wrapper For Last Name    -->
 
+            <!--    Input Wrapper For Email    -->
             <div class="form-control">
                 <input type="text" id="email" name="email" placeholder="Email Address">
                 <img src="images/icon-error.svg" alt="Error">
                 <span>Error message</span>
             </div>
+            <!--    Input Wrapper For Email    -->
+
+            <!--    Input Wrapper For Password    -->
             <div class="form-control">
                 <input type="password" id="password" name="password" placeholder="Password">
                 <img src="images/icon-error.svg" alt="Error">
                 <span>Error message</span>
             </div>
-            <!--            <div class="sign-up-button">-->
-            <!--                <button class="btn-2" type="submit">claim your free trial</button>-->
-            <!--            </div>-->
+            <!--    Input Wrapper For Password    -->
+
+            <!--    Sign Up Button    -->
             <button class="sign-up-button" type="submit">
                 claim your free trial
             </button>
+            <!--    Sign Up Button    -->
+
+            <!--    Terms & Services Title    -->
             <p class="footer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+            <!--    Terms & Services Title    -->
         </form>
+        <!--    HTML Form    -->
     </div>
+    <!--    Form Card    -->
 </div>
+<!--    Main Wrapper    -->
 
 <script src="app.js">
 </script>
