@@ -41,6 +41,11 @@ body {
     caret-color: var(--Blue);
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid var(--Blue);
+}
+
 /*
 * Form Inputs Styles
 */
@@ -75,10 +80,6 @@ body {
     visibility: visible;
 }
 
-input:focus {
-    outline: none;
-    border: 2px solid var(--Blue);
-}
 
 .form-control img {
     position: absolute;
@@ -145,7 +146,10 @@ header p {
     font-size: 1.1rem;
 }
 
-.form {
+/*
+* Styles of Form Card
+*/
+.form-card {
     display: grid;
     justify-items: center;
 }
@@ -159,7 +163,7 @@ header p {
 /*
 * Sign Up Button
 */
-.form .sign-up-button {
+.form-card .sign-up-button {
     border: none;
     text-align: center;
     display: grid;
@@ -176,13 +180,13 @@ header p {
     text-transform: uppercase;
 }
 
-.form .footer {
+.form-card .footer {
     text-align: center;
     font-size: 12px;
     color: var(--Grayish-Blue);
 }
 
-.form p > a {
+.form-card p > a {
     color: var(--Red);
     text-decoration: none;
     font-weight: 600;
@@ -191,7 +195,7 @@ header p {
 /*
 * Try For Free Button
 */
-.form .try-free-button {
+.form-card .try-free-button {
     border: none;
     text-align: center;
     display: grid;
@@ -207,12 +211,12 @@ header p {
     margin-bottom: 2rem;
 }
 
-.form .try-free-button > p {
+.form-card .try-free-button > p {
     font-weight: 700;
     max-width: calc(200rem / 16)
 }
 
-.form .try-free-button > p > span {
+.form-card .try-free-button > p > span {
     font-weight: 500;
 }
 
@@ -235,20 +239,15 @@ header p {
         max-width: 80rem;
     }
 
-    .form {
+    .form-card, .form-card .try-free-button p {
         width: 100%;
     }
 
-    .form .try-free-button, form, .form .sign-up-button {
+    .form-card .try-free-button, form, .form-card .sign-up-button, .form-card .try-free-button p {
         max-width: 100%;
     }
 
-    .form .try-free-button p {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .form .sign-up-button {
+    .form-card .sign-up-button {
         margin: 0 auto 1rem;
     }
 
