@@ -38,6 +38,7 @@ body {
     background-image: url(./images/bg-intro-mobile.png);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
+    caret-color: var(--Blue);
 }
 
 /*
@@ -76,7 +77,7 @@ body {
 
 input:focus {
     outline: none;
-    border: 2px solid var(--Dark-Blue);
+    border: 2px solid var(--Blue);
 }
 
 .form-control img {
@@ -100,8 +101,9 @@ input:focus {
 */
 form {
     background-color: var(--White);
-    padding: 2rem 1rem;
-    /*height: 530px;*/
+    padding: 2rem;
+    max-width: calc(450rem / 16);
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -167,13 +169,14 @@ header p {
     padding: 1.25em 0;
     max-width: calc(450rem / 16);
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     box-shadow: 0px 4px 0px 1px hsl(154deg 59% 51% / 56%);
     border-radius: 0.75rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    text-transform: uppercase;
 }
 
-.form p {
+.form .footer {
     text-align: center;
     font-size: 12px;
     color: var(--Grayish-Blue);
@@ -182,6 +185,7 @@ header p {
 .form p > a {
     color: var(--Red);
     text-decoration: none;
+    font-weight: 600;
 }
 
 /*
@@ -227,9 +231,42 @@ header p {
 
     .main {
         grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        max-width: 80rem;
     }
 
-    .form .try-free-button {
+    .form {
+        width: 100%;
+    }
+
+    .form .try-free-button, form, .form .sign-up-button {
         max-width: 100%;
+    }
+
+    .form .try-free-button p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form .sign-up-button {
+        margin: 0 auto 1rem;
+    }
+
+    form {
+        padding: 2rem 3rem;
+    }
+
+    .form-control > input {
+        padding: 1rem 0 1rem 2rem;
+    }
+
+    header h1 {
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header p {
+        text-align: left;
     }
 }
