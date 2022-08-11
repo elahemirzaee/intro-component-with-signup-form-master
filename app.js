@@ -8,13 +8,11 @@ const form = document.getElementById('form'),
     password = document.getElementById('password');
 
 
-console.log('sjrgfhfdg')
 /*
 * @desc Add Event Listener On Submit Button
 * */
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('submiiit')
     checkInput();
 });
 
