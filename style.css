@@ -106,12 +106,13 @@ form {
     max-width: calc(450rem / 16);
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0px 4px 0px 1px rgb(0 0 0 / 17%);
 }
 
 /*
 * MAIN BACKGROUND WRAPPER
 */
-.main {
+main {
     display: grid;
     gap: 3rem;
     max-width: 71.875rem;
@@ -233,7 +234,7 @@ header p {
         background-position: top center;
     }
 
-    .main {
+    main {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         max-width: 80rem;
